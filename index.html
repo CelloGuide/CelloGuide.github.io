@@ -20,26 +20,20 @@
         h2{
             font-family:Herculanum, "PT Mono", sans-serif;
             font-size: 2.3em;
-            line-height: 30px;
+            line-height: 28px;
         }
         h3{
             font-family:Herculanum, "PT Mono", sans-serif;
             font-size: 1.47em;
         }
-        #body-info{
-            width: 70%
-        }
 
-        #cello-pic{
+        #my-picture{
             margin-top: 5%;
             margin-bottom: 5%;
         }
         #my-cello-journey{
             border: 2px solid rgb(0, 0, 0);
-            background-color:rgba(201, 201, 201, 0.884);
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
+            background-color:rgba(255, 255, 255, 0.884);
             margin-top: 10%;
             margin-bottom: 10%;
             text-align: center;
@@ -52,11 +46,44 @@
             padding-right: 15%;
         }
 
-        .about-titles{
+        .titles{
             text-decoration: underline;
             text-underline-offset: 10px;
-            background-color: rgb(235, 235, 235);
+            background-color: rgb(227, 238, 222);
             padding: 3%;
+            text-align: center;
+        }
+
+        #cello-basics{
+            border: 2px solid rgb(0, 0, 0);
+            background-color:rgba(255, 255, 255, 0.884);
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            text-align: left;
+            font-size: 15px;
+            line-height:1.5em;
+        }
+
+        .basics-paragraphs-subtitles{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .basics-lists{
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+
+        #cello-pics{
+            text-align: center;
+            margin: 5%;
+        }
+        #cello-pics-float{
+            float: right;
+            margin-right: 7%;
         }
 
     </style>
@@ -74,18 +101,25 @@
 
     <!--Here is section one: My Cello Journey-->
     <div id="my-cello-journey">
-    <h1 class="about-titles">About</h1>
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/raw/main/Cello%20Photo.jpg" alt="Protrait of Eileen and her cello." width="350" id="cello-pic">
-    <h2 class="about-titles">My Cello Journey</h2>
+    <h1 class="titles">About</h1>
+    <img src="https://github.com/CelloGuide/CelloGuide.github.io/raw/main/Cello%20Photo.jpg" alt="Protrait of Eileen and her cello." width="350" id="my-picture">
+    <h2 class="titles">My Cello Journey</h2>
     <p class="about-paragraph">I was introduced to the cello by my elementary school when I was eleven. I had already played the piano for five years, but I did not know much about string instruments. The cello was very interesting because it is much different from the piano, so my parents found me a private cello teacher. I enjoyed my classes very much and often practiced my Suzuki pieces for many hours a day. When I entered middle school, I decided that I was going to be serious with the cello. I played in the Berkeley Youth Orchestra (6th grade) and the Oakland Symphony Youth Orchestra (7th grade) while serving as assistant principal at the school strings orchestra. I won several competitions, including the United States Open International Competition, the Kings Peak International Music Competition, and numerous others within the United States. I love this instrument and always look forward to learning more about it in the future.</p>
-    <h2 class="about-titles">About Cellistic</h2>
+    <h2 class="titles">About Cellistic</h2>
     <p class="about-paragraph">When I first started the cello, I explored and read all about it on the internet. It was a great experience; however, I had some problems. First off, the information was scattered all over the place. I did not find a page with everything stored on a single website. It often led me to browse Google extensively and mindlessly, which was unpleasant for 5th grade me. Second, my yet-to-develop reading comprehension skills were not strong. Reading information written by adults for adults was confusing. <strong>Welcome to Cellistic— a webpage written with simple language but contains all the information beginner cellists need. Now that you are here— explore!</strong></p>
     </div>
 
-    <div id="body-info">
     <!--This section talks about the parts of a cello-->
-    <h2 id="parts">Parts of a Cello</h2>
-    <ul>
+    <div id="cello-basics">
+    <h1 class="titles">Cello Basics</h1>
+    <div id="cello-pics">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/case.JPG?raw=true" alt="cello case" width="300">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/front%20&%20bow.JPG?raw=true" alt="font of the cello & cello bow" width="300">
+    </div>
+
+    <!--This section talks about the parts of a cello-->
+    <h2 class="basics-paragraphs-subtitles">Parts of a Cello</h2>
+    <ul class="basics-lists">
         <li>Scroll: The scroll is the very top of the cello. It is a piece of carved wood that connects to the pegbox.</li> 
         <li>Peg box: The pegbox holds all the pegs.</li>
         <li>Pegs: Cellists use pegs to tune the cello. They are big and hard to turn, so cellists don't use pegs unless absolutely necessary. We use fine tuners instead, which is defined later.</li>
@@ -99,22 +133,23 @@
         <li>Endpin: The endpin connects the cello to the floor. Its length is adjustable so that the instrument is at a comfortable place for your height. (Fun fact, Baroque cellos did not have endpins.)</li>
         <li>Bow: Typically made out of horsehair and wood, the bow is used on the string to produce music.</li>
     </ul>
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/case.JPG?raw=true" alt="cello case" width="200">
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/top.JPG?raw=true" alt="the top of the cello: scroll, pegs, peg box" height="200">
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/front%20&%20bow.JPG?raw=true" alt="font of the cello & cello bow" width="200">
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/back.JPG?raw=true" alt="back of the cello" height="200">
+    <!--add images here. See layout sketch for further instructions-->
 
     <!--This section talks about the role of the cello in different groups.-->
-    <h2 id="role">The Role of the Cello</h2>
-    <h3>Solo<a href=#repertoire>(repertoire list)</a></h3>
-    <p>There are many solo repertoires for the cello. Sonatas, typically three to four movements, are accompanied by pianos. Concertos are also three to four movements, but they are accompanied by orchestras. Grand and stunning, they are played in big concert halls around the world. There are solo pieces without accompaniments, with Bach's six suites being the heart of the cello repertoire to many cellists. Other pieces that don't fix in any of these categories include <em>The Swan, Hungarian Rhapsody, Paganini: Variations on one string, </em>etc.</p>
-    <h3>Chamber Music</h3>
-    <h3>Orchestra</h3>
-    <p>The cello and the bass are the two string instruments that have the lowest sound. You might have heard people say that the cello sounds the most like the human voice. Because of its warm and low sound, cellos usually play the bass line and harmony of orchestral music to achieve balance in sound with the other instruments. Occasionally, cellos get melodies that are played by a few of the 8-12 cellists. A famous example is the violin & cello duet in the 2th movement of Dvorak's 9th symphony.</p>
-
+    <h2 class="basics-paragraphs-subtitles">The Role of the Cello</h2>
+    <h3 class="basics-paragraphs-subtitles">Solo<a href=#repertoire>(repertoire list)</a></h3>
+    <p class="basics-paragraphs-subtitles">There are many solo repertoires for the cello. Sonatas, typically three to four movements, are accompanied by pianos. Concertos are accompanied by orchestras that play in big concert halls around the world. There are solo pieces without accompaniments, with Bach's six suites being the heart of the cello repertoire to many cellists. Other pieces that don't fit in any of these categories include <em>The Swan, Hungarian Rhapsody, Paganini: Variations on one string, </em>etc.</p>
+    <h3 class="basics-paragraphs-subtitles">Chamber Music</h3>
+    <p class="basics-paragraphs-subtitles">There are many chamber music types, and the cellos' roles vary for each one. For example, cellists play differently in piano trios vs. quartets. In quartets, we mainly play bass lines that drive the music "from the bottom." One quartet that I find particularly interesting is the Kolisch Quartet. This group played from memory, which almost no one else does. In addition, Rudolf Kolisch, the leader, played left-handed due to an injury on the other hand. In piano trios, cellists should try to play like pianists and vice versa. This is because pianists can't sustain/ crescendo (on a note), slide, or vibrate. Therefore, cellists need to consider these factors when thinking about how they can best balance and blend in with the group. Other forms of chamber music include duets, quintets, and sextets.</p>
+    <h3 class="basics-paragraphs-subtitles">Orchestra</h3>
+    <p class="basics-paragraphs-subtitles">The cello (8-12 per orchestra) and the bass are the two string instruments with the lowest sound. You might have heard people say that the cello sounds the most like the human voice. Because of its wide range of notes, cellos play the harmony and the melody of orchestral music. The harmony serves to balance sound with the other instruments, and the melody is the main tune.</p>
     <!--This section talks about famous cello repertoires, along with their recordings.-->
-    <h2 id="repertoire">Cello Repertoire</h2>
-    <ol>
+    <h2 class="basics-paragraphs-subtitles">Cello Repertoire</h2>
+    <div id="cello-pics-float">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/top.JPG?raw=true" alt="the top of the cello: scroll, pegs, peg box" height="300">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/back.JPG?raw=true" alt="back of the cello" height="300">
+    </div>
+    <ol class="basics-lists">
         <li>The Swan</li>
         <li>Bach Cello Suites</li>
         <li>Bruch: Kol Nidrei</li>
@@ -131,8 +166,11 @@
         <li>Schumann Cello Concerto</li>
         <li>And <strong>so many</strong> more!</li>
     </ol>
+
+    </div>
+
     <!--This is the section of my cello blog, where I consistently update about twice a month.-->
     <h2 id="blog">My Cello Blog</h2>
-    </div>
+    
 </body>
 </html>
