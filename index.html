@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Cellistic</title>
     <style>
+        header{
+            background-color:black;
+        }
+        header::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo{
+            float:left;
+            margin-left: 4%;
+            padding: 10px;
+        }
+        nav{
+            float: right;
+            width:70%;
+        }
+        nav ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 10%;
+            margin-top:5%;
+            color:white;
+        }
+        nav a {
+            color:white;
+            text-transform: uppercase;
+        }
+
+        nav a:hover{
+            text-decoration:overline;
+            color:rgb(226, 238, 220);
+        }
+        nav a:visited{
+            text-decoration:none;
+            color:white;
+        }
+        nav a:active{
+            text-decoration:none;
+            color:white;
+        }
+        nav a:focus{
+            text-decoration:none;
+            color:white;
+        }
         body{
-            font-family:"Open Sans", sans-serif;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-size: 18px;
             -webkit-font-smoothing: antialiased;
             line-height:1.625;
@@ -36,17 +93,9 @@
             margin-top: 5%;
             margin-bottom: 5%;
         }
-        #about-page{
-            border: 2px solid rgb(0, 0, 0);
-            background-color:rgb(255, 255, 255, 0.884);
-            margin-top: 10%;
-            margin-bottom: 10%;
-            text-align: center;
-        }
+        
         .about-paragraph{
             text-align:left;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 18px;
             line-height:1.625;
             padding-left: 16%;
             padding-right: 16%;
@@ -60,16 +109,14 @@
             text-align: center;
         }
 
-        #cello-basics, #blog, #projects{
-            border: 2px solid rgb(0, 0, 0);
+        #about-page, #cello-basics, #blog, #projects, #contact{
             background-color:rgba(255, 255, 255, 0.884);
             display:block;
             margin-left:auto;
             margin-right:auto;
             margin-top: 10%;
-            margin-bottom: 10%;
+            padding-bottom:4%;
             text-align: left;
-            font-size: 15px;
             line-height:1.5em;
         }
 
@@ -87,11 +134,16 @@
             text-align: center;
             margin: 5%;
         }
-        #cello-pics-float{
+        #cello-pics-gallery{
             text-align:center;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            margin-top: 3%;
+            margin-bottom: 3%;
         }
+
+        .gallery-pics{
+            margin-bottom: 0.5%;
+        }
+
         .sheet-music{
             margin-top: 4%;
         }
@@ -107,20 +159,27 @@
 </head>
 
 <body>
-    <!--This is the top of the page, where the title and all the links for this website are.-->
-    <div><h1>Cellistic</h1>
-    <h3><a href=#about>About</a></h3>
-    <h3><a href=#parts>Parts of a Cello</a></h3>
-    <h3><a href=#role>The Role of the Cello</a></h3>
-    <h3><a href=#repertoire>Cello Repertoire</a></h3>
-    <h3><a href=#blog>My Cello Blog</a></h3>
-    <h3><a href=#projects>Projects</a></h3>
-    </div>
+
+<!--This is the Nav Bar.-->
+<header>
+    <img src="https://raw.githubusercontent.com/CelloGuide/celloguide.github.io/main/Cellistic%20logo.png" alt="logo" width=13% class="logo">
+    <nav>
+        <ul>
+            <li><a href=#about>About</a></li>
+            <li><a href=#cello-basics>Basics</a></li>
+            <li><a href=#blog>Blog</a></li>
+            <li><a href=#projects>Projects</a></li>
+            <li><a href=#contact>Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
 
     <!--Here is section one: My Cello Journey-->
     <div id="about-page">
     <h1 class="titles" id="about">About</h1>
-    <img src="https://github.com/CelloGuide/CelloGuide.github.io/raw/main/Cello%20Photo.jpg" alt="Protrait of Eileen and her cello." width="33%" id="my-picture">
+    <center><img src="https://github.com/CelloGuide/CelloGuide.github.io/raw/main/Cello%20Photo.jpg" alt="Protrait of Eileen and her cello." width="33%" id="my-picture"></center>
     <h2 class="titles">My Cello Journey</h2>
     <p class="about-paragraph">I was introduced to the cello by my elementary school when I was eleven. I had already played the piano for five years, but I did not know much about string instruments. The cello was very interesting because it is much different from the piano, so my parents found me a private cello teacher. I enjoyed my classes very much and often practiced my Suzuki pieces for many hours a day. When I entered middle school, I decided that I was going to be serious with the cello. I played in the Berkeley Youth Orchestra (6th grade) and the Oakland Symphony Youth Orchestra (7th grade) while serving as assistant principal at the school strings orchestra. I won several competitions, including the United States Open International Competition, the Kings Peak International Music Competition, and numerous others within the United States. I love this instrument and always look forward to learning more about it in the future.</p>
     <h2 class="titles">About Cellistic</h2>
@@ -151,14 +210,14 @@
         <li>Endpin: The endpin connects the cello to the floor. Its length is adjustable so that the instrument is at a comfortable place for your height. (Fun fact, Baroque cellos did not have endpins.)</li>
         <li>Bow: Typically made out of horsehair and wood, the bow is used on the string to produce music.</li>
     </ul>
-    <div id="cello-pics-float">
-        <img src="https://raw.githubusercontent.com/CelloGuide/celloguide.github.io/main/bridge.jpg" alt="bridge" width="20%">
-        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/top.JPG?raw=true" alt="the top of the cello: scroll, pegs, peg box" width="20%"> 
-        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/tailpiece.JPG?raw=true" alt="tailpiece and fine tuners" width=20%>
+    <div id="cello-pics-gallery">
+        <img src="https://raw.githubusercontent.com/CelloGuide/celloguide.github.io/main/bridge.jpg" alt="bridge" width="20%" class="gallery-pics">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/top.JPG?raw=true" alt="the top of the cello: scroll, pegs, peg box" width="20%" class="gallery-pics"> 
+        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/tailpiece.JPG?raw=true" alt="tailpiece and fine tuners" width=20% class="gallery-pics">
         <br>
-        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/f%20hole.JPG?raw=true" alt="f holes" width=20%>
-        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/back.JPG?raw=true" alt="back of the cello" width="20%">
-        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/fingerboard.JPG?raw=true" alt="fingerboard" width=20%>
+        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/f%20hole.JPG?raw=true" alt="f holes" width=20% class="gallery-pics">
+        <img src="https://github.com/CelloGuide/CelloGuide.github.io/blob/main/back.JPG?raw=true" alt="back of the cello" width="20%" class="gallery-pics">
+        <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/fingerboard.JPG?raw=true" alt="fingerboard" width=20% class="gallery-pics">
     </div>
 
     <!--This section talks about the role of the cello in different groups.-->
@@ -190,7 +249,7 @@
             <li>Schumann Cello Concerto</li>
             <li>And <strong>so many</strong> more!</li>
         </ol>
-        </div>
+    </div>
 
         <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/music2.jpg?raw=true" width="15%" alt="sheet music 1" class="sheet-music">
         <img src="https://github.com/CelloGuide/celloguide.github.io/blob/main/music3.jpg?raw=true" width="15%" alt="sheet music 2" class="sheet-music">
@@ -208,10 +267,17 @@
     <p class="paragraphs-subtitles">Blog 1 content</p>
     </div>
     
+    <!--This section includes the projects that I have done.-->
     <div id="projects">
         <h1 class="titles">Projects</h1>
         <h2 class="titles"><!--Project 1: Name--></h2>
-        <p class="about-paragraph">Music projects coming soon...</p>
+        <p class="paragraphs-subtitles">Music projects coming soon...</p>
+    </div>
+
+    <!--This section includes my contact info.-->
+    <div id="contact">
+        <h1 class="titles">Contact</h1>
+        <p class="paragraphs-subtitles">Contact info</p>
     </div>
 </body>
 </html>
